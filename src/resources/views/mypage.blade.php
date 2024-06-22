@@ -1,4 +1,11 @@
-<main>
+@extends('layouts.app')
+
+@section('css')
+<link rel="stylesheet" href="{{ asset('css/login.css') }}">
+@endsection
+
+@section('content')
+<div class="mypage">
     <h2>さん</h2>
     <div class="mypage__item">
         <div class="item1">
@@ -64,4 +71,5 @@
             </div>
         </div>
     </div>
-</main>
+</div>
+@endsection

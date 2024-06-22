@@ -31,7 +31,6 @@ header {
     z-index: 100;
     /* 重なり順を一番上にする */
     cursor: pointer;
-    /*J memo*/
     background-color: #3560F6;
     border-radius: 7px;
     margin-top: 20px;
@@ -94,6 +93,8 @@ header {
 /* メニュー黒ポチを消す */
 .nav_list {
     list-style: none;
+    border: none;
+    margin-top: 300px;
 }
 
 /* アイコンがクリックされたらメニューを表示 */
@@ -104,8 +105,30 @@ header {
 
 .nav_item {
     text-align: center;
+}
+
+.nav_item a {
     color: #3560F6;
     font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.item2 {
+    margin-top: 30px;
+}
+
+.item3 {
+    margin-top: 30px;
+}
+
+.logout__btn {
+    border: none;
+    background: transparent;
+    outline: none;
+    color: #3560F6;
+    font-size: 30px;
+    font-weight: 600;
 }
 
 header h1 {
