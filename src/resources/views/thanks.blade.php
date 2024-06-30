@@ -9,7 +9,7 @@
     <div class="thanks__box">
         <h2>会員登録ありがとうございます</h2>
         <form class="thanks-page__form" action="/thanks" method="get">
-            <button class="thanks__btn" type="submit">ログインする</button>
+            <button class="thanks__btn" type="button" onclick="location.href='/login'">ログインする</button>
         </form>
     </div>
 </div>

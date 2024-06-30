@@ -7,6 +7,7 @@
 @section('content')
 <div class="shop__all">
     <form class="form__search" action="/">
+        @csrf
         <div class="select-box">
             <select class="select area" type="select" placeholder="All area">
                 <option class="option" value="">

@@ -13,15 +13,8 @@ class ShopController extends Controller
         return view('shop_all');
     }
 
-    public function store(RegisterRequest $request)
+    public function thanks()
     {
-        if ($request->has('back')) {
-            return redirect('/')->withInput();
-        }
-
-        $contact = $request->only(['name', 'email', 'password']);
-        User::create($contact);
-
         return view('thanks');
     }
 }

@@ -15,4 +15,4 @@ use App\Http\Controllers\ShopController;
 */
 
 Route::get('/', [ShopController::class, 'index']);
-Route::post('/thanks', [ShopController::class, 'store']);
+Route::get('/thanks', [ShopController::class, 'thanks']);
