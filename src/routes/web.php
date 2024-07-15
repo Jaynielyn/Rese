@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ShopController;
+use App\Http\Controllers\FavoriteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,10 @@ use App\Http\Controllers\ShopController;
 
 Route::get('/', [ShopController::class, 'index']);
 Route::get('/thanks', [ShopController::class, 'thanks']);
+Route::group(['middleware' => 'auth'], function () {
+    Route::group(['prefix' => 'shop/{id}'], function () {
+        Route::post('favorite', 'FavoriteController@store')->name('favorites.favorite');
+        Route::delete('unfavorite', 'FavoriteController@destroy')->name('favorites.unfavorite');
+    });
+});
+

@@ -60,7 +60,14 @@
             <div class="box__bottom">
                 <button class="box__btn" type="submit">詳しくみる</button>
                 <!-- ハートお気に入り -->
-                <img class="heart__icon" src="img/heart.png">
+                <div class="btn__group">
+                    <form method="post" action="/favorites">
+                        @csrf
+                        <button class="heart__btn" type="submit">
+                            <i class="fa-solid fa-heart size" style="color: #a6b2b9;"></i>
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
 
@@ -74,7 +81,12 @@
             <div class="box__bottom">
                 <button class="box__btn" type="submit">詳しくみる</button>
                 <!-- ハートお気に入り -->
-                <img class="heart__icon" src="img/heart.png">
+                <form method="post" action="/favorites">
+                    @csrf
+                    <button class="heart__btn" type="submit">
+                        <i class="fa-solid fa-heart size" style="color: #a6b2b9;"></i>
+                    </button>
+                </form>
             </div>
         </div>
 
@@ -88,7 +100,7 @@
             <div class="box__bottom">
                 <button class="box__btn" type="submit">詳しくみる</button>
                 <!-- ハートお気に入り -->
-                <img class="heart__icon" src="img/heart.png">
+                <i class="fa-solid fa-heart size" style="color: #a6b2b9;"></i>
             </div>
         </div>
 
@@ -102,7 +114,7 @@
             <div class="box__bottom">
                 <button class="box__btn" type="submit">詳しくみる</button>
                 <!-- ハートお気に入り -->
-                <img class="heart__icon" src="img/heart.png">
+                <i class="fa-solid fa-heart size" style="color: #a6b2b9;"></i>
             </div>
         </div>
 
